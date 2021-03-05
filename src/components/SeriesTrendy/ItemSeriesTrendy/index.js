@@ -1,6 +1,6 @@
 import React from "react";
 
-function ItemMovieTrendy(props) {
+function ItemSeriesTrendy(props) {
   const { title, img } = props;
   return (
     <>
@@ -10,4 +10,4 @@ function ItemMovieTrendy(props) {
   );
 }
 
-export default ItemMovieTrendy;
+export default ItemSeriesTrendy;

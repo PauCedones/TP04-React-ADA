@@ -23,7 +23,7 @@ function MovieTrendy() {
         return (
           <ItemMovieTrendy
             title={item.title}
-            img={item.backdrop_path}
+            img={item.poster_path}
             key={item.id ? item.id : key}
           />
         );
