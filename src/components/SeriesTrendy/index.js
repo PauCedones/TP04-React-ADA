@@ -19,6 +19,7 @@ function SeriesTrendy() {
 
   return (
     <>
+      <h1>Trending TV Shows</h1>
       {seriesTrendy.map((item, key) => {
         return (
           <ItemSeriesTrendy

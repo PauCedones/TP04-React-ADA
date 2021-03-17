@@ -1,12 +1,14 @@
 import React from "react";
+import "./style.scss";
 
 function ItemMovieTrendy(props) {
-  const { title, img } = props;
+  const { title, img, rated } = props;
   return (
-    <>
-      <img src={`http://image.tmdb.org/t/p/w185${img}`} />
-      <p>{title}</p>
-    </>
+    <div className="item-context">
+      <img src={`http://image.tmdb.org/t/p/w154${img}`} />
+      <p className="title">{title}</p>
+      <p className="rated">{rated}</p>
+    </div>
   );
 }
 

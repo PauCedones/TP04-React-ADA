@@ -1,0 +1,19 @@
+.item-context {
+  img {
+    width: 200px;
+    margin: 3px;
+
+    &:hover {
+      width: 210px;
+      transition: all 0.5s ease;
+    }
+  }
+  .title {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  .rated {
+    font-size: 1rem;
+    margin: 0;
+  }
+}

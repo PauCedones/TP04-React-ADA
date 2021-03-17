@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./style.scss";
 import axios from "axios";
 import ItemMovieTrendy from "./ItemMovieTrendy";
 
@@ -19,15 +20,21 @@ function MovieTrendy() {
 
   return (
     <>
-      {movieTrendy.map((item, key) => {
-        return (
-          <ItemMovieTrendy
-            title={item.title}
-            img={item.poster_path}
-            key={item.id ? item.id : key}
-          />
-        );
-      })}
+      <h1>Trending Movies</h1>
+      <section className="wrapper">
+        <a>🢀</a>
+        {movieTrendy.map((item, key) => {
+          return (
+            <ItemMovieTrendy
+              title={item.title}
+              img={item.poster_path}
+              rated={item.vote_average}
+              key={item.id ? item.id : key}
+            />
+          );
+        })}
+        <a>🢂</a>
+      </section>
     </>
   );
 }

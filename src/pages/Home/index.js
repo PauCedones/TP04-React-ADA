@@ -1,6 +1,7 @@
 import React from "react";
-import MovieTrendy from "./components/MovieTrendy";
-import SeriesTrendy from "./components/SeriesTrendy";
+import "./style.scss";
+import MovieTrendy from "../../components/MovieTrendy";
+import SeriesTrendy from "../../components/SeriesTrendy";
 
 function App() {
   return (
